@@ -75,15 +75,16 @@ class CourseRegistrationLinkTest extends TestCase
         $this->assertNotSame($old->slug, $new->fresh()->slug);
     }
 
-    public function test_admin_links_use_the_current_site_and_show_the_saved_form(): void
+    public function test_admin_links_use_the_frontend_site_and_show_the_saved_form(): void
     {
         $this->actingAs(new User(['type' => 'ADMIN']));
         $form = RegistrationForm::create(['name' => 'Form kiểm thử đường dẫn local', 'fields' => RegistrationFields::defaults()]);
         $course = $this->createCourse($this->payload($form));
+        config(['certificates.frontend_url' => 'https://frontend.example.test']);
         $url = route('certification.exam', $course->slug);
-        $this->get(route('certification.index'))->assertOk()->assertSee($url)->assertSee($form->name)
+        $this->get(route('certification.index'))->assertOk()->assertSee($course->publicUrl())->assertSee($form->name)
             ->assertDontSee('https://certificate-uni.io.vn/');
-        $this->get(route('certification.edit', $course))->assertOk()->assertSee($url)
+        $this->get(route('certification.edit', $course))->assertOk()->assertSee($course->publicUrl())
             ->assertSee('Khóa học chưa có câu hỏi');
         $this->get($url)->assertOk()->assertViewIs('certification-unavailable')->assertSee('Khóa học chưa mở!');
     }

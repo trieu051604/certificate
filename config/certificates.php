@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'frontend_url' => env('FRONTEND_URL', 'http://localhost:5173'),
     'default_background' => 'css/submit-certification/cer.jpg',
 
     'email_subject' => 'Chứng chỉ hoàn thành khóa học [course] – [name]',

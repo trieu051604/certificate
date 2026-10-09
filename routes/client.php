@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Mail;
 Route::get("/certification/{course}", [CertificationClientController::class, 'show'])->name('certification.exam');
 Route::get('/certification/download/{studentId}', [CertificationClientController::class, 'downloadCertification'])
     ->middleware('throttle:10,1')->name('certification.download');
+Route::get('/chung-chi/tra-cuu', [CertificationClientController::class, 'index']);
+Route::post('/chung-chi/tra-cuu', [CertificationClientController::class, 'search']);
 Route::domain('certificate-uni.io.vn')->group(function () {
     Route::get("/", function() {
         return abort(404);

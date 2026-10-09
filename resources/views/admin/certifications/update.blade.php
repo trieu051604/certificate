@@ -15,7 +15,7 @@
         </div>
         <div class="card-body">
             <p>Đường dẫn làm bài của khóa #{{ $certification->id }}:
-                <a href="{{ route('certification.exam', $certification->slug) }}" target="_blank" rel="noopener">{{ route('certification.exam', $certification->slug) }}</a>
+                <a href="{{ $certification->publicUrl() }}" target="_blank" rel="noopener">{{ $certification->publicUrl() }}</a>
             </p>
             @if (!$certification->questions()->exists())
                 <div class="alert alert-warning">

@@ -16,7 +16,7 @@
                     <button type="submit" class="btn btn-success" :disabled="isSubmit">{{ isSubmit ? 'Đang chấm điểm...' : 'Nộp bài' }}</button>
                     <div v-if="result && result.isPass && !game" class="certificate-result">
                         Bạn đã đạt {{ result.point }}/{{ courseInfo.questions.length }} điểm.
-                        <a :href="'/certification/download/' + result.id" target="_blank" rel="noopener">Tải chứng chỉ PDF</a>
+                        <a :href="result.download_url" target="_blank" rel="noopener">Tải chứng chỉ PDF</a>
                     </div>
                 </div>
             </form>

@@ -7200,7 +7200,7 @@ var render = function render() {
     staticClass: "certificate-result"
   }, [_vm._v("\n                    Bạn đã đạt " + _vm._s(_vm.result.point) + "/" + _vm._s(_vm.courseInfo.questions.length) + " điểm.\n                    "), _c("a", {
     attrs: {
-      href: "/certification/download/" + _vm.result.id,
+      href: _vm.result.download_url,
       target: "_blank",
       rel: "noopener"
     }

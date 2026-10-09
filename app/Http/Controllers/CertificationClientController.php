@@ -22,6 +22,7 @@ class CertificationClientController extends Controller
         }
 
         $course->setAttribute('registration_fields', $course->registrationFields());
+        $course->questions->each(fn ($question) => $question->makeHidden('answer_correct_id'));
         $provinces = \DB::table('province_certification')->select(['province', 'id'])->get();
         $schools = \DB::table('school_certification')->select(['school', 'id', 'province_id'])->get();
 
@@ -37,53 +38,20 @@ class CertificationClientController extends Controller
 
      public function index()
     {
-
-        return view('course.index');
+        return redirect(rtrim(config('certificates.frontend_url'), '/').'/chung-chi/tra-cuu');
     }
 
      public function search(Request $request)
     {
-
-        if ($request->filled('website')) {
-            abort(403, 'Spam detected');
-        }
-
-
-        $request->validate([
-            'search' => 'required|string|min:3'
-        ]);
-
-        $search = $request->input('search');
-        
-        // Tìm kiếm theo SĐT hoặc Email
-        $students = PersonCertificationTest::where('phone', $search)
-                         ->orWhere('email', $search)
-                         ->orderBy('id','desc')
-                         ->paginate(10);
-        $student = PersonCertificationTest::where('phone', $search)
-                         ->orWhere('email', $search)
-                         ->first();
-
-        if (!$student) {
-            return back()->with('error', 'Không tìm thấy học viên');
-        }
-
-        // Lấy danh sách khóa học
-        // Giả sử bạn có bảng course_student hoặc tương tự
-        // $courses = $student->certification()->paginate(10);
-        
-        // Hoặc nếu bạn lưu khóa học trực tiếp trong bảng students:
-        // $courses = Course::where('certification_test_id', $student->certification_test_id)->get();
-
-        return view('course.index', compact('student', 'students' ));
+        return redirect(rtrim(config('certificates.frontend_url'), '/').'/chung-chi/tra-cuu');
     }
-
 
     /**
      * Tải chứng chỉ PDF
      */
     public function downloadCertification($studentId)
     {
+        abort_unless(request()->hasValidSignature() || (auth()->check() && auth()->user()->type === 'ADMIN'), 403);
         $student = PersonCertificationTest::findOrFail($studentId);
 
         // Kiểm tra học viên có đạt hay không
@@ -111,7 +79,7 @@ class CertificationClientController extends Controller
         // Tải PDF trực tiếp mà không lưu trữ
         $filename = "chungchi_{$student->fullname}_{$student->created_at->format('dmY')}.pdf";
         
-        return $pdf->download($filename);
+        return $pdf->download($filename)->header('Cache-Control', 'private, no-store');
     }
 
 

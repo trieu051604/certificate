@@ -45,7 +45,7 @@
                                 <tr class="@if ($index % 2 == 0) odd @else even @endif">
                                     <td class="text-center">{{$loop->iteration}}</td>
                                     <td>{{ $certification->course }} <small class="text-muted">#{{ $certification->id }}</small></td>
-                                    <td><a target="_blank" rel="noopener" href="{{ route('certification.exam', $certification->slug) }}">{{ route('certification.exam', $certification->slug) }}</a></td>
+                                    <td><a target="_blank" rel="noopener" href="{{ $certification->publicUrl() }}">{{ $certification->publicUrl() }}</a></td>
                                     <td>{{ $certification->registrationForm?->name ?? 'Form mặc định' }}</td>
                                    
                                     <td>

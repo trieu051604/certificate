@@ -83,6 +83,12 @@ Route::post('checkin-online', [HelperController::class, 'checkIn'])->middleware(
 Route::post('tra-cuu', [HelperController::class, 'traCuu']);
 
 Route::prefix('certification')->group(function () {
+    Route::get('courses', [\App\Http\Controllers\Api\PublicCertificationController::class, 'index']);
+    Route::get('courses/{slug}', [\App\Http\Controllers\Api\PublicCertificationController::class, 'show']);
+    Route::post('lookup/request-code', [\App\Http\Controllers\Api\PublicCertificationController::class, 'requestCode'])->middleware('throttle:5,1');
+    Route::post('lookup/verify-code', [\App\Http\Controllers\Api\PublicCertificationController::class, 'verifyCode'])->middleware('throttle:10,1');
+    Route::get('certificates/{studentId}/download', [\App\Http\Controllers\CertificationClientController::class, 'downloadCertification'])
+        ->middleware(['signed', 'throttle:10,1'])->name('api.certification.download');
     // Route::get('get-province', [CertificationTestController::class, 'getProvinces']);submit-form-game
     // Route::get('get-school', [CertificationTestController::class, 'getSchools']);
     Route::post('submit-form', [CertificationTestController::class, 'submitFormCertification']);

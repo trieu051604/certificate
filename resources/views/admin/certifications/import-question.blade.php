@@ -13,7 +13,7 @@
             </h3>
         </div>
         <div class="card-body">
-            <p><a href="{{ route('certification.exam', $certification->slug) }}" target="_blank" rel="noopener">Mở trang làm bài của khóa #{{ $certification->id }}</a></p>
+            <p><a href="{{ $certification->publicUrl() }}" target="_blank" rel="noopener">Mở trang làm bài của khóa #{{ $certification->id }}</a></p>
             @php($locked = $certification->persons_count + $certification->person_game_count > 0)
             @if ($locked)
                 <div class="alert alert-warning">

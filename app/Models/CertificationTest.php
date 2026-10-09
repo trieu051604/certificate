@@ -40,6 +40,12 @@ class CertificationTest extends Model
         return $this->registrationForm?->fields ?? \App\Services\RegistrationFields::defaults($this->type === 'QUIZGAME');
     }
 
+    public function publicUrl(): string
+    {
+        return $this->type === 'QUIZGAME' ? route('certification.exam', $this->slug)
+            : rtrim(config('certificates.frontend_url'), '/').'/certification/'.rawurlencode($this->slug);
+    }
+
     public function certificateBackground(): string
     {
         return $this->certificateTemplate?->background

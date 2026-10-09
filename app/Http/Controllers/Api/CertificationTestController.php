@@ -109,7 +109,7 @@ class CertificationTestController extends Controller
             return response()->json([
                 'status' => '201',
                 'msg' => 'create success',
-                'data' => $personCertification
+                'data' => \App\Services\PublicCertificate::result($personCertification)
             ]);
 
         } catch (\Throwable $th) {

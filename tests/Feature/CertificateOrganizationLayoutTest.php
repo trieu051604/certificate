@@ -80,7 +80,7 @@ class CertificateOrganizationLayoutTest extends TestCase
             $this->assertCount(1, $mail->attachments());
             return true;
         });
-        $this->get(route('certification.download', $response->json('data.id')))->assertOk()->assertHeader('content-type', 'application/pdf');
+        $this->get($response->json('data.download_url'))->assertOk()->assertHeader('content-type', 'application/pdf');
         $this->assertCount(2, $captured);
         foreach ($captured as $info) {
             $this->assertSame('Đoàn phường kiểm thử', $info['registration_data']['custom_random_key']['value']);
