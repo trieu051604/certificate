@@ -1,0 +1,106 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+ul{
+	list-style: none;
+}
+@font-face {
+  font-family: Dancing;
+  src: url('font/SVN-Dancing-script.ttf');
+}
+
+body {
+  font-family: DejaVu Sans, sans-serif; /* Font hỗ trợ tiếng Việt */
+}
+
+#html-content-holder{
+	position: relative;
+}
+
+.thongtin {
+    position: absolute;
+    top: 48.6%;
+    left: 57rem;
+    z-index: 111;
+    text-align: center;
+    font-size: 1.5rem;
+    /* transform: translateX(-50%); */
+    width: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fffffd;
+    font-size: 2rem;
+}
+
+/* .thongtin p:nth-child(1){
+	color: #424242;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+
+} */
+
+
+.truong {
+  position: absolute;
+  bottom: 41%;
+  left: 46.5%;
+  font-size: 2rem;
+  width: max-content;
+}
+
+.tinh {
+  position: absolute;
+  bottom: 38.3%;
+  left: 46.5%;
+  font-size: 2rem;
+  width: max-content;
+}
+
+.khoahoc {
+  position: absolute;
+    bottom: 31.4%;
+    left: 46.5%;
+    font-size: 3rem;
+    width: max-content;
+}
+
+.ten {
+  position: absolute;
+  font-size: 4rem;
+  width: max-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+/* TEST-AI background: the labels are already printed on the image. */
+.certificate-organization .certificate-name {
+  position: absolute;
+  top: 48.8%;
+  left: 12%;
+  width: 76%;
+  text-align: center;
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+.certificate-organization .certificate-unit {
+  position: absolute;
+  top: 58.6%;
+  left: 47%;
+  width: 45%;
+  font-size: 32px;
+  line-height: 1.25;
+  overflow-wrap: break-word;
+}
+
+.certificate-organization .certificate-course {
+  position: absolute;
+  top: 64.6%;
+  left: 47%;
+  width: 45%;
+  line-height: 1.25;
+  overflow-wrap: break-word;
+}

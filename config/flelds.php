@@ -1,0 +1,111 @@
+<?php 
+
+return [
+    'accept_flelds' => [
+        'createStudent' => [
+            'Email',
+            'Phone',
+            'SchoolRankID',
+            'SchoolRankTop',
+            'FullName',
+            'Gender',
+            'BOD',
+            'IdNumber',
+            'IdIssuedDate',
+            'IdIssuedPlace',
+            'SchoolName',
+            'SchoolCode',
+            'ProvinceName',
+            'GraduateYear',
+            'AltName',
+            'AltPhone',
+            'AltEmail',
+            'AltProvince',
+            'AltDistrict',
+            'AltWard',
+            'AltAddress',
+            'CheckSum',
+            'APICode'
+        ],
+        'updateStudent' => [
+            'ID',
+            'Email',
+            'Phone',
+            'SchoolRankID',
+            'SchoolRankTop',
+            'FullName',
+            'Gender',
+            'BOD',
+            'IdNumber',
+            'IdIssuedDate',
+            'IdIssuedPlace',
+            'SchoolName',
+            'SchoolCode',
+            'ProvinceName',
+            'GraduateYear',
+            'AltName',
+            'AltPhone',
+            'AltEmail',
+            'AltProvince',
+            'AltDistrict',
+            'AltWard',
+            'AltAddress',
+            'CheckSum',
+            'APICode',
+            'RegisterAdmission',
+            'ApplyCredit',
+            'ScholarshipExam',
+            'ScholarshipConsideration',
+            'NoSchoolrank',
+            'MajorCode',
+            'MajorName',
+            'CampusCode',
+            'PlaceExam',
+            'Incentives',
+            'Achievement',
+            'Scholarship',
+            'ChangeLog',
+            'SchoolDistrict',
+            'Method',
+            'ExamCondition'
+        ],
+        'getAllDataOfStudentByPhoneOrEmail' => [
+            'Email',
+            'Phone',
+            // 'FullName',
+            // 'Gender',
+            'CheckSum',
+            'APICode',
+            // 'ChangeLog'
+        ],
+        'updateStatus' => [
+            'ID',
+            'Email',
+            'Phone',
+            'FullName',
+            'Gender',
+            'Status',
+            'CheckSum',
+            'APICode',
+            'ChangeLog'
+        ],
+        'updateDocumentAndPayment' => [
+            'ID',
+            'Email',
+            'Phone',
+            'APICode',
+            'CheckSum',
+            'FullActivities',
+            'Invoices'
+        ]
+    ],
+    'require_flelds' => [
+        'createStudent' => [
+            'FullName',
+            'Phone',
+            'BOD',
+            'IdNumber',
+            'ProvinceName'
+        ]
+    ]
+];

@@ -1,0 +1,206 @@
+{
+    "course": "Ứng dụng AI trong giáo dục THPT",
+    "passing_score": 10,
+    "listQuestions": [
+        {
+            "question": "AI nên được sử dụng trong dạy học với vai trò nào?",
+            "answers": [
+                { "id": "A", "answer": "Một công cụ hỗ trợ giúp giáo viên tối ưu hóa quá trình giảng dạy"},
+                { "id": "B", "answer": "Thay thế hoàn toàn giáo viên trong lớp học"},
+                { "id": "C", "answer": "Phụ thuộc hoàn toàn vào AI trong việc dạy học"},
+                { "id": "D", "answer": "Chỉ sử dụng AI cho học sinh yếu"}
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "Giáo viên nên làm gì khi sử dụng AI trong giảng dạy?",
+            "answers": [
+                { "id": "A", "answer": "Phụ thuộc hoàn toàn vào AI để chấm điểm và tạo bài giảng"},
+                { "id": "B", "answer": "Sử dụng AI để hỗ trợ, đồng thời kết hợp với các phương pháp truyền thống"},
+                { "id": "C", "answer": "Chỉ sử dụng AI khi không có giáo viên trong lớp"},
+                { "id": "D", "answer": "Để AI quản lý toàn bộ quá trình giảng dạy"}
+            ],
+            "answer_correct": "B"
+        },
+        {
+            "question": "Khi sử dụng AI trong học tập, học sinh cần phải:",
+            "answers": [
+                { "id": "A", "answer": "Sử dụng AI để tìm kiếm thông tin và phát triển kỹ năng tự học"},
+                { "id": "B", "answer": "Để AI làm toàn bộ bài tập"},
+                { "id": "C", "answer": "Phụ thuộc vào AI để giải quyết mọi vấn đề"},
+                { "id": "D", "answer": ". Không cần tìm hiểu thêm ngoài những gì AI cung cấp"}
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "Một trong những rủi ro khi phụ thuộc quá nhiều vào AI trong học tập là gì?",
+            "answers": [
+                { "id": "A", "answer": "Giảm khả năng tư duy sáng tạo và phân tích của học sinh" },
+                { "id": "B", "answer": "Tăng cường kỹ năng giải quyết vấn đề" },
+                { "id": "C", "answer": "Học sinh trở nên độc lập hơn" },
+                { "id": "D", "answer": "Tăng hiệu quả học tập đáng kể" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "Vai trò của giáo viên khi sử dụng AI trong lớp học là gì?",
+            "answers": [
+                { "id": "A", "answer": "Chỉ dựa vào AI để giảng dạy" },
+                { "id": "B", "answer": "Hướng dẫn học sinh sử dụng AI một cách hiệu quả như công cụ hỗ trợ, đồng thời phát triển tư duy phản biện" },
+                { "id": "C", "answer": "Để học sinh tự làm việc với AI mà không có sự hướng dẫn" },
+                { "id": "D", "answer": "Sử dụng AI thay thế hoàn toàn phương pháp giảng dạy truyền thống" }
+            ],
+            "answer_correct": "B"
+        },
+        {
+            "question": "AI có thể hỗ trợ giáo viên trong việc nào sau đây?",
+            "answers": [
+                { "id": "A", "answer": "Soạn giáo án" },
+                { "id": "B", "answer": "Tạo slide bài giảng nhanh chóng" },
+                { "id": "C", "answer": "Tạo bài kiểm tra" },
+                { "id": "D", "answer": "Tất cả các lựa chọn trên" }
+            ],
+            "answer_correct": "D"
+        },
+        {
+            "question": "Trí tuệ nhân tạo (AI) là gì?",
+            "answers": [
+                { "id": "A", "answer": "Công nghệ giả lập tư duy và hành động của con người" },
+                { "id": "B", "answer": "Phần mềm quản lý lớp học" },
+                { "id": "C", "answer": "Hệ thống giúp lưu trữ dữ liệu" },
+                { "id": "D", "answer": "Máy tính tốc độ cao" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "AI có thể giúp học sinh cá nhân hóa trải nghiệm học tập bằng cách nào?",
+            "answers": [
+                { "id": "A", "answer": "Cung cấp nội dung học theo trình độ của mỗi học sinh" },
+                { "id": "B", "answer": "Tạo nhóm học tập ngẫu nhiên" },
+                { "id": "C", "answer": "Tự động gợi ý bài kiểm tra ngắn" },
+                { "id": "D", "answer": "Lưu bài giảng cho giáo viên" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "AI có thể được sử dụng để:",
+            "answers": [
+                { "id": "A", "answer": "Thay thế hoàn toàn giáo viên trong lớp học" },
+                { "id": "B", "answer": "Hỗ trợ và tăng cường các phương pháp giảng dạy truyền thống" },
+                { "id": "C", "answer": "Chỉ dành cho học sinh yếu" },
+                { "id": "D", "answer": "Không thể áp dụng vào giáo dục" }
+            ],
+            "answer_correct": "B"
+        },
+        {
+            "question": "Lợi ích chính của AI trong việc đánh giá học sinh là gì?",
+            "answers": [
+                { "id": "A", "answer": "Đánh giá nhanh và chính xác" },
+                { "id": "B", "answer": "Không cần giáo viên quản lý" },
+                { "id": "C", "answer": "Giúp học sinh học qua mạng xã hội" },
+                { "id": "D", "answer": "Đưa ra kết quả ngẫu nhiên" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "Một trong những ứng dụng của AI trong việc tạo đề kiểm tra là gì?",
+            "answers": [
+                { "id": "A", "answer": "Tự động tạo các câu hỏi dựa trên nội dung bài học" },
+                { "id": "B", "answer": "Giao bài kiểm tra cho giáo viên chấm" },
+                { "id": "C", "answer": "Chọn ngẫu nhiên câu hỏi từ ngân hàng câu hỏi" },
+                { "id": "D", "answer": "Đọc câu hỏi cho học sinh trả lời" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "Chatbot AI có thể được sử dụng trong lớp học để:",
+            "answers": [
+                { "id": "A", "answer": "Tự động dạy học sinh" },
+                { "id": "B", "answer": "Tương tác với học sinh, trả lời các câu hỏi đơn giản" },
+                { "id": "C", "answer": "Thay thế giáo viên" },
+                { "id": "D", "answer": "Chấm điểm bài kiểm tra viết" }
+            ],
+            "answer_correct": "B"
+        },
+        {
+            "question": "Hạn chế của ChatGPT trong dạy học là gì?",
+            "answers": [
+                { "id": "A", "answer": "Không thể tạo bài kiểm tra" },
+                { "id": "B", "answer": "Đôi khi tạo ra thông tin không chính xác" },
+                { "id": "C", "answer": "Không thể trò chuyện với học sinh" },
+                { "id": "D", "answer": "Không hỗ trợ nhiều ngôn ngữ" }
+            ],
+            "answer_correct": "B"
+        },
+        {
+            "question": "Gamma là công cụ gì?",
+            "answers": [
+                { "id": "A", "answer": "Một nền tảng trình chiếu với các tính năng thông minh" },
+                { "id": "B", "answer": "Một hệ thống kiểm tra trực tuyến" },
+                { "id": "C", "answer": "Một nền tảng tạo giáo án tự động" },
+                { "id": "D", "answer": "Một trang web học tập" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "Tính năng nổi bật của Gamma trong dạy học là gì?",
+            "answers": [
+                { "id": "A", "answer": "Trình bày nội dung một cách trực quan và sinh động" },
+                { "id": "B", "answer": "Tự động chấm điểm bài kiểm tra" },
+                { "id": "C", "answer": "Quản lý lớp học trực tuyến" },
+                { "id": "D", "answer": "Tạo bài giảng bằng video" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "Giáo viên có thể sử dụng AI như thế nào để theo dõi tiến độ học tập của học sinh?",
+            "answers": [
+                { "id": "A", "answer": "Sử dụng các hệ thống AI để tạo báo cáo học tập cá nhân hóa cho mỗi học sinh" },
+                { "id": "B", "answer": "Chỉ sử dụng AI để đánh giá kết quả kiểm tra cuối kỳ" },
+                { "id": "C", "answer": "Không sử dụng AI mà dùng các phương pháp truyền thống" },
+                { "id": "D", "answer": "Chỉ theo dõi qua camera lớp học" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "AI có thể giúp giáo viên cải thiện phương pháp giảng dạy bằng cách nào?",
+            "answers": [
+                { "id": "A", "answer": "Đưa ra gợi ý về phương pháp giảng dạy phù hợp dựa trên dữ liệu học sinh" },
+                { "id": "B", "answer": "Thay thế hoàn toàn vai trò của giáo viên" },
+                { "id": "C", "answer": "Tự động giảng bài và giải quyết mọi vấn đề của học sinh" },
+                { "id": "D", "answer": "Không thể cải thiện phương pháp giảng dạy" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "Lợi ích chính của việc sử dụng AI trong quản lý hệ thống giáo dục là gì?",
+            "answers": [
+                { "id": "A", "answer": "Tối ưu hóa quy trình quản lý dữ liệu, giảm thời gian thủ công" },
+                { "id": "B", "answer": "Tạo ra kế hoạch học tập cá nhân cho mỗi học sinh" },
+                { "id": "C", "answer": "Hỗ trợ học sinh tự học hoàn toàn mà không cần giáo viên" },
+                { "id": "D", "answer": "Đưa ra các bài kiểm tra tự động" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "AI có thể giúp quản lý sự tiến bộ của học sinh thông qua việc nào sau đây?",
+            "answers": [
+                { "id": "A", "answer": "Theo dõi và báo cáo kết quả học tập theo thời gian thực" },
+                { "id": "B", "answer": "Chấm bài tập hàng ngày" },
+                { "id": "C", "answer": "Thay thế giáo viên quản lý lớp học" },
+                { "id": "D", "answer": "Chỉ báo cáo kết quả cuối kỳ" }
+            ],
+            "answer_correct": "A"
+        },
+        {
+            "question": "AI có thể hỗ trợ giáo viên phân tích phản hồi của học sinh bằng cách nào?",
+            "answers": [
+                { "id": "A", "answer": "Tự động thu thập và phân tích phản hồi từ học sinh để đưa ra gợi ý cải thiện phương pháp giảng dạy" },
+                { "id": "B", "answer": "Chỉ ghi lại phản hồi mà không phân tích" },
+                { "id": "C", "answer": "Gửi phản hồi đến giáo viên mà không cần xử lý" },
+                { "id": "D", "answer": "Đưa ra kết quả chấm điểm dựa trên phản hồi của học sinh" }
+            ],
+            "answer_correct": "A"
+        }
+    ]
+}
